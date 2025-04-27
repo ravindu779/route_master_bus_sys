@@ -1,0 +1,306 @@
+.about-container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: relative;
+    background-color: #dcecfc;
+  }
+  .about-container > h1 {
+      
+    font-size: 2.6rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-family: font8;
+    color: #000;
+    z-index: 10;
+    margin-bottom: 2.5rem;
+    position: relative;
+    padding: 30px 180px 0px 180px;
+  }
+  .about-container > h1::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    bottom: -10px;
+    background-color: #f3e16f;
+    display: block;
+    position: absolute;
+    border-radius: 20px;
+  }
+  .about-description {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    padding: 30px 180px 30px 180px;
+  }
+  
+  .about-left {
+    width: 50%;
+  }
+  .about-right {
+    width: 50%;
+  }
+  .about-left > h2 {
+    font-size: 1.7rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-family: font8;
+    color: #000;
+    z-index: 10;
+    margin-bottom: 2.5rem;
+    position: relative;
+  }
+  .image-section {
+    position: relative;
+    padding: 30px 180px 30px 180px;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .image-textcard {
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    width: 300px;
+    height: 200px;
+    translate: (-50%, -50%);
+    z-index: 1;
+    padding: 20px;
+    background-color: #174069;
+    color: white;
+    opacity: 0.8;
+  }
+  .image-textcard > h1 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    top: 20px;
+    color: white;
+    z-index: 10;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+  }
+  .director-name {
+    margin-top: 3rem;
+  }
+  .director-name > p {
+    font-family: font5;
+    font-size: 0.9rem;
+  }
+  
+  .yellow-div {
+    width: 100%;
+    height: 100px;
+    background-color: #fde428;
+    padding: 30px 180px 30px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .yellow-div > h1 {
+    font-family: font8;
+    font-weight: 900;
+    font-size: 2rem;
+    transform: scaleY(0.8);
+  }
+  .yellow-div > button {
+    background-color: #174069;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    width: 140px;
+    font-family: font5;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+  }
+  .yellow-div > button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .yellow-div > button > svg {
+    color: #fde428;
+  }
+  .about-left > p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    color: #4b3e62c2;
+    z-index: 10;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-left > h2::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    bottom: -10px;
+    background-color: #fde428;
+    display: block;
+    position: absolute;
+    border-radius: 20px;
+  }
+  .about-right > p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    color: #4b3e62c2;
+    z-index: 10;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+  }
+  .about-right > h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+    font-family: font8;
+    color: #000;
+    z-index: 10;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .about-right > h2::after {
+    content: "";
+    width: 40px;
+    height: 5px;
+    bottom: -10px;
+    background-color: #fde428;
+    display: block;
+    position: absolute;
+    border-radius: 20px;
+  }
+  .director-d1 {
+    font-weight: bold;
+  }
+  .director-d2 {
+    font-weight: bold;
+  }
+  .image-carosal {
+    width: 100%;
+    height: 300px;
+    margin: 2rem 0;
+    background-color: #174069;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    overflow-x: scroll;
+  }
+  
+  .image-carosal > img {
+    width: 12rem;
+    height: 8rem;
+    filter: grayscale(1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .image-carosal > img:hover {
+    filter: grayscale(0);
+  }
+  @media (max-width: 1200px) {
+    .yellow-div {
+      padding: 30px 100px 30px 100px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .about-container > h1,
+    .image-section,
+    .about-description {
+      padding: 30px 120px 0px 120px;
+    }
+    .yellow-div {
+      padding: 30px 60px 30px 60px;
+    }
+    .yellow-div > h1 {
+      font-size: 1.8rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .about-container {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .about-container > h1,
+    .image-section,
+    .about-description {
+      padding: 30px 80px 0px 80px;
+    }
+    .about-left,
+    .about-right {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .image-textcard > p {
+      font-size: 1rem;
+      font-weight: 300;
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+    .about-description {
+      display: flex;
+      flex-direction: column;
+    }
+    .yellow-div {
+      padding: 30px 40px 30px 40px;
+    }
+    .yellow-div > h1 {
+      font-size: 1.4rem;
+    }
+  }
+  @media (max-width: 492px) {
+    .about-container {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .about-container > h1,
+    .image-section,
+    .about-description {
+      padding: 30px 40px 0px 40px;
+    }
+  
+    .image-textcard {
+      position: absolute;
+      top: 70px;
+      left: 20px;
+      width: 300px;
+      height: 200px;
+  
+      padding: 20px;
+    }
+    .image-textcard > h1 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.1rem;
+  
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+    .yellow-div > h1 {
+      font-size: 1.2rem;
+      width: 230px;
+    }
+  }
+  

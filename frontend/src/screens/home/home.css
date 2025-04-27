@@ -1,0 +1,119 @@
+.showCard {
+    margin-top: 3%;
+  }
+  
+  .formData {
+    margin-top: 3%;
+  }
+  
+  .InputData {
+    position: relative;
+    width: 290px;
+  }
+  
+  .mainCard {
+    background-color: white;
+    width: 700px;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 4px;
+  }
+  
+  .InputDataLeft {
+    position: relative;
+    width: 290px;
+  }
+  
+  .errorContainer {
+    position: absolute;
+    top: 55%;
+    right: -15px;
+    transform: translateY(-50%);
+  }
+  
+  .errorIcon {
+    position: absolute;
+    color: red;
+    right: -25px;
+  }
+  
+  .errorText {
+    position: absolute;
+    bottom: 30%;
+    left: -35px;
+    width: 100px;
+    color: white;
+    background-color: #eb2929;
+    border: 1px solid #eb2929;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .errorText::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: #eb2929 transparent transparent transparent;
+    font-size: 10px;
+  }
+  
+  .change-password-submit-button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  
+  .bus_card_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  .home_bus_card {
+    background-color: #e8eef3;
+    box-shadow: 3px 3px 3px #a5a5a577;
+  }
+  
+  .home_bus_card:hover {
+    background-color: #d6e5f4;
+    box-shadow: 3px 3px 3px #91919177;
+  }
+  
+  .fixed-bottom-line {
+    position: fixed;
+    font-weight: bold;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* Background color */
+    color: rgb(240, 0, 0); /* Text color */
+    padding: 10px 0;
+    text-align: center;
+    z-index: 10; /* Make sure it's above other elements */
+  }
+  
+  .news-ticker {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  
+  .news-ticker span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 25s linear infinite;
+  }
+  
+  @keyframes ticker {
+    from {
+      transform: translateX(200%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }

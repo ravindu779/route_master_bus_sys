@@ -1,0 +1,8 @@
+.bus_details_main_container{
+    min-height: calc(100vh - 100px);
+}
+
+.routeAddButton:hover{
+    background-color:rgb(158, 158, 158) !important;
+    cursor: pointer;
+}
